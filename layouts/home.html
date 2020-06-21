@@ -1,0 +1,31 @@
+{{ define "content" }}
+
+{{ .Content }}
+
+{{ $baseURL := "https://images.freifunk-duesseldorf.de/gluon/stable" -}}
+{{ $versionData := getJSON (print $baseURL "/version.json") -}}
+{{ $urlPrefix := printf "%s/factory/gluon-ddorf-%s-" $baseURL $versionData.version -}}
+
+<section id="downloads">
+{{- range .Site.Data.downloads.images }}
+{{ $brand := .brand }}
+<h3>{{ $brand }}</h3>
+  {{- range .models }}
+<div class="model-row">
+  {{ $name := .name }}
+  <h4 class="model-name">{{ $name }}</h4>
+    {{- if reflect.IsMap .image }}
+  <div class="version-group" role="group" aria-label="Choose a hardware version">
+      {{- range $rev, $url := .image }}
+    <a class="download-button" role="button" href="{{ print $urlPrefix $url }}" title="{{ $brand }} {{ $name }} - {{ $rev }}">{{ $rev }}</a>
+      {{- end }}
+  </div>
+    {{- else }}
+  <a class="download-button" role="button" href="{{ print $urlPrefix .image }}" title="{{ $brand }} {{ $name }}">Download</a>
+    {{- end }}
+</div>
+  {{- end }}
+{{- end }}
+</section>
+
+{{- end }}

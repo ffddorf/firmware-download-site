@@ -1,0 +1,85 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// cleanup some variants
+$theme-colors: map-remove(
+  $theme-colors,
+  "success",
+  "danger",
+  "warning",
+  "info",
+  "light",
+  "dark"
+);
+
+$grid-breakpoints: map-remove($grid-breakpoints, "xs", "md", "lg", "xl");
+
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/buttons";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-container {
+  max-width: 60rem;
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+.back-link {
+  &:before {
+    content: "⬅️";
+  }
+}
+
+#downloads {
+  h3 {
+    margin-top: 1.5rem;
+  }
+}
+
+.model-row {
+  display: flex;
+  justify-content: flex-start;
+
+  // mobile
+  align-items: flex-start;
+  flex-direction: column;
+
+  @include media-breakpoint-up("sm") {
+    flex-direction: row;
+  }
+
+  margin-bottom: 0.5rem;
+
+  .model-name {
+    font-size: $font-size-lg;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    min-width: 14rem;
+    padding: 0.375rem 0;
+  }
+
+  .download-button {
+    @extend .btn, .btn-outline-secondary;
+  }
+
+  .version-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    > .btn {
+      margin-right: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

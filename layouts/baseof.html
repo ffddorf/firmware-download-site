@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  {{ $style := resources.Get "style.scss" | resources.ToCSS | resources.Minify }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="main-container">
+    <nav>
+      <a class="back-link" href="https://freifunk-duesseldorf.de">Zurück zur Webseite</a>
+    </nav>
+    <main role="main">
+    {{ block "content" . -}}
+      {{ .Content }}
+    {{ end -}}
+    </main>
+  </div>
+</body>
+</html>
