@@ -85,15 +85,6 @@
       ]
     },
     {
-      "brand": "LeMaker",
-      "models": [
-        {
-          "name": "Banana Pi",
-          "image": "lemaker-banana-pi.img.gz"
-        }
-      ]
-    },
-    {
       "brand": "Linksys",
       "models": [
         {
@@ -147,7 +138,6 @@
         }
       ]
     },
-
     {
       "brand": "Nexx",
       "models": [
@@ -284,16 +274,8 @@
           }
         },
         {
-          "name": "Archer C20 🆕",
-          "image": {
-            "Version 1": "tp-link-archer-c20-v1.bin"
-          }
-        },
-        {
           "name": "Archer C20i 🆕",
-          "image": {
-            "Version 1": "tp-link-archer-c20i.bin"
-          }
+          "image": "tp-link-archer-c20i.bin"
         },
         {
           "name": "Archer C50 🆕",
@@ -310,29 +292,28 @@
         {
           "name": "CPE210",
           "image": {
-            "Version 1.0": "tp-link-cpe210-v1.0.bin",
-            "Version 1.1": "tp-link-cpe210-v1.1.bin",
-            "Version 2.0": "tp-link-cpe210-v2.0.bin",
-            "Version 3.0": "tp-link-cpe210-v3.0.bin"
+            "Version 1": "tp-link-cpe210-v1.bin",
+            "Version 2": "tp-link-cpe210-v2.bin",
+            "Version 3": "tp-link-cpe210-v3.bin"
           }
         },
         {
           "name": "CPE220",
           "image": {
-            "Version 1.1": "tp-link-cpe220-v1.1.bin"
+            "Version 1": "tp-link-cpe220-v1.bin",
+            "Version 3": "tp-link-cpe220-v3.bin"
           }
         },
         {
           "name": "CPE510",
           "image": {
-            "Version 1.0": "tp-link-cpe510-v1.0.bin",
-            "Version 1.1": "tp-link-cpe510-v1.1.bin"
+            "Version 1": "tp-link-cpe510-v1.bin"
           }
         },
         {
           "name": "CPE520 🆕",
           "image": {
-            "Version 1.1": "tp-link-cpe510-v1.1.bin"
+            "Version 1": "tp-link-cpe510-v1.bin"
           }
         },
         {
@@ -404,13 +385,13 @@
         {
           "name": "WBS210",
           "image": {
-            "Version 1.20": "tp-link-wbs210-v1.20.bin"
+            "Version 1": "tp-link-wbs210-v1.bin"
           }
         },
         {
           "name": "WBS510",
           "image": {
-            "Version 1.20": "tp-link-wbs510-v1.20.bin"
+            "Version 1": "tp-link-wbs510-v1.bin"
           }
         }
       ]
@@ -473,7 +454,6 @@
             "M2": "ubiquiti-rocket-m2.bin",
             "M2-TI": "ubiquiti-rocket-m2-ti.bin",
             "M2-XW": "ubiquiti-rocket-m2-xw.bin",
-            "M5": "ubiquiti-rocket-m5.bin",
             "M5-TI": "ubiquiti-rocket-m5-ti.bin",
             "M5-XW": "ubiquiti-rocket-m5-xw.bin"
           }
