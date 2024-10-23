@@ -113,7 +113,7 @@
           "image": "netgear-r6120.img"
         },
         {
-          "name": "R6220 🆕",
+          "name": "R6220",
           "image": "netgear-r6220.img"
         },
         {
@@ -133,7 +133,7 @@
           "image": "netgear-wndr4300.img"
         },
         {
-          "name": "WNDRMACv2 🆕",
+          "name": "WNDRMACv2",
           "image": "netgear-wndrmacv2.img"
         }
       ]
@@ -260,7 +260,7 @@
           }
         },
         {
-          "name": "Archer C6 🆕",
+          "name": "Archer C6",
           "image": {
             "Version 2": "tp-link-archer-c6-v2.bin"
           }
@@ -274,11 +274,11 @@
           }
         },
         {
-          "name": "Archer C20i 🆕",
+          "name": "Archer C20i",
           "image": "tp-link-archer-c20i.bin"
         },
         {
-          "name": "Archer C50 🆕",
+          "name": "Archer C50",
           "image": {
             "Download": "tp-link-archer-c50.bin"
           }
@@ -311,13 +311,13 @@
           }
         },
         {
-          "name": "CPE520 🆕",
+          "name": "CPE520",
           "image": {
             "Version 1": "tp-link-cpe510-v1.bin"
           }
         },
         {
-          "name": "RE450 🆕",
+          "name": "RE450",
           "image": {
             "Download": "tp-link-re450.bin"
           }
@@ -431,14 +431,14 @@
           "name": "NanoStation",
           "image": {
             "Loco M2": "ubiquiti-nanostation-loco-m2.bin",
-            "Loco M2-XW 🆕": "ubiquiti-nanostation-loco-m2-xw.bin",
+            "Loco M2-XW": "ubiquiti-nanostation-loco-m2-xw.bin",
             "Loco M5": "ubiquiti-nanostation-loco-m5.bin",
-            "Loco M5-XW 🆕": "ubiquiti-nanostation-loco-m5-xw.bin",
+            "Loco M5-XW": "ubiquiti-nanostation-loco-m5-xw.bin",
             "M-XW": "ubiquiti-nanostation-m-xw.bin",
             "M": "ubiquiti-nanostation-m.bin",
             "M2": "ubiquiti-nanostation-m2.bin",
             "M5": "ubiquiti-nanostation-m5.bin",
-            "M5-XW 🆕": "ubiquiti-nanostation-m5-xw.bin"
+            "M5-XW": "ubiquiti-nanostation-m5-xw.bin"
           }
         },
         {
